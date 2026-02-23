@@ -2,3 +2,25 @@
 .DS_Store
 .DS_Store
 .DS_Store
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Azure ML local
+mlruns/
