@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
 name: used-cars-train-env
-version: 1
+version: 2
 description: Training environment for used cars model
 image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:latest
 conda_file: ../../../data-science/environment/train-conda.yml
