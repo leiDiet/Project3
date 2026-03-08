@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/data.schema.json
+name: used-cars-train-split
+version: 1
+type: uri_folder
+path: ../../../data/splits/train
+description: Train split folder containing train.csv

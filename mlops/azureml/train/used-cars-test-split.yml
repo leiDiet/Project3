@@ -1,0 +1,6 @@
+$schema: https://azuremlschemas.azureedge.net/latest/data.schema.json
+name: used-cars-test-split
+version: 1
+type: uri_folder
+path: ../../../data/splits/test
+description: Test split folder containing test.csv
