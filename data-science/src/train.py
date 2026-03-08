@@ -37,6 +37,17 @@ def main(args):
     X_train = train_df.drop(columns=['price'])
     y_test = test_df['price']
     X_test = test_df.drop(columns=['price'])
+
+    # Encode categorical columns
+    from sklearn.preprocessing import LabelEncoder
+    for col in X_train.select_dtypes(include='object').columns:
+        le = LabelEncoder()
+        X_train[col] = le.fit_transform(X_train[col].astype(str))
+        X_test[col] = le.transform(X_test[col].astype(str))
+
+    # Initialize and train a RandomForest Regressor
+    model = RandomForestRegressor(n_estimators=args.n_estimators, max_depth=args.max_depth, random_state=42)
+    model.fit(X_train, y_train)
     
     # Initialize and train a RandomForest Regressor
     model = RandomForestRegressor(n_estimators=args.n_estimators, max_depth=args.max_depth, random_state=42)
