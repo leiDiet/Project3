@@ -1,5 +1,4 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-type: command
 display_name: train_model
 experiment_name: used-cars-training
 
